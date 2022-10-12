@@ -1,0 +1,198 @@
+body.dark{
+    background: #252525;
+    & *{
+        color:white !important;
+        
+    } 
+    & .ui-thems-button{
+        & path{
+            stroke: white;
+        }
+        &.active{
+            border-color:white;
+        }
+    }
+    & .ui-talks{
+        border-color:white;
+        & line{
+            stroke: white;
+        }
+    }
+    & .footer{
+        & path{
+            fill: wheat;
+        }
+    }
+    & main.main-page>.section__brends>.container_full>.container>div.block,
+    & main.main-page>.section__brends>.container_full{
+        border-color: white;
+    }
+    & main.main-page>.section__brends>.container_full>.container>div.block>.num{
+        color:#555555 !important;
+    }
+    & main.main-page>.section__brends>.container_full>.container>div.block button{
+        background: white;
+        & line{
+            stroke: #252525;
+        }
+    }
+    & main.main-page>.section__ourWork{
+        background: #FBFBFB;
+        & *{
+            color:#252525 !important;
+        }
+    }
+    & main.main-page>.section__ourWork>.container>.header>P:after{
+        background:#252525;
+    }
+    & main.main-page>.section__ourWork>.container>.wrapper_works>.slide .images_wrapper>.onclick_wrapper>a>span{
+        color:white !important;
+    }
+    & main.main-page>.section__ourWork>.container>a>svg{
+        & line{
+            stroke: #252525;
+        }
+    }
+    & main.main-page>.section__service .controll>span>b{
+        color:#D2D2D2 !important;
+    }
+    & main.main-page>.section__service .controll>span>b.active{
+        color:#3369F4 !important;
+    }
+    & main.main-page>.section__service .controll>.buttons>button{
+        background: #393939;
+        &:hover{
+            background: #3369F4;
+        }
+    }
+    & main.main-page>.section__service>.container>.swiper .wrapper-slide{
+        background: #313131;
+    }
+    & main.main-page>.section__service>.container>.swiper .wrapper-slide>.num{
+        color:#636363 !important;
+    }
+    & .ui-popups-link-button{
+        color:#3369F4 !important;
+    }
+    & main.main-page>.section__blog{
+        background: #FBFBFB;
+    }
+    & main.main-page>.section__blog>.container>.header>h2{
+        color:#252525 !important;
+    }
+    & main.main-page>.section__blog>.container>.header>.controlls>button:disabled{
+        background: #F1F1F1;
+    }
+    & main.main-page>.section__blog>.container>.main>.left>.title{
+        color:#252525 !important;
+    }
+    & main.main-page>.section__blog>.container>.main>.left>.news{
+        color:#252525 !important;
+    }
+    & main.main-page>.section__blog>.container>.main>.right>.swiper .slide-wrapper>.info>.date{
+        color:#A8A8A8 !important;
+    }
+    & main.main-page>.section__blog>.container>.main>.right>.swiper .slide-wrapper>.info>a , main.main-page>.section__blog>.container>.main>.right>.swiper .slide-wrapper>h3{
+        color:#252525 !important;
+    }
+    & main.main-page>.section__consultation>.container_fluid>.main>.column>.wrapper{
+        background: white;
+    }
+    & main.main-page>.section__consultation>.container_fluid>.main>.column>.wrapper>.info{
+        color:#252525 !important;
+    }
+    & main.main-page>.section__hereis{
+        background: #FBFBFB;
+        & *{
+            color:#252525 !important;
+        }
+    }
+    & main.main-page>.section__hereis>.container>.main>.column>.num{
+        color:#3369F4 !important;
+    }
+    & main.main-page>.section__hereis>.container>.main>.column>p{
+        color:#696969 !important;
+    }
+    & main.main-page>.section__team>.container>.main>.wrapper>.image_wrapper:after{
+        box-shadow: #252525 0 0 40px 47px;
+    }
+    & main.main-page>.section__team>.container>.main>.wrapper>.image_wrapper:after{
+        background: #252525;
+    }
+    & main.main-page>.section__team>.container>.main>.wrapper>.info>span{
+        color:#838383 !important;
+    }
+    & .ui-button-4{
+        color:#252525 !important;
+    }
+    & .open_burger{
+        & line{
+            stroke: white;
+        }
+    }
+    & header>.container>.block>.burger>.burger_menu ,
+    header>.container>.block>.burger>.burger_menu>.bottom{
+        background: #FBFBFB;
+        & *{
+            color:#252525 !important;
+        }
+    }
+    & header>.container>.block>.burger>.burger_menu>.header>.title>span{
+        color:#3369F4 !important;
+    }
+    & header>.container>.block>.burger>.burger_menu>.header>button{
+        & path{
+            stroke: black;
+        }
+    }
+    & header>.container>.block>.burger>.burger_menu>.bottom>.thems>button{
+        & path{
+            stroke: black;
+        }
+        &.active{
+            border-color: black;
+        }
+    }
+    & .popup-more>.wrapper{
+        background: #2B2B2B;
+    }
+    & .popup-more>.wrapper .section_right>.list>li>.num, .popup-more>.wrapper>.section_left>.list>li>.num{
+        color:rgba($color: #3369F4, $alpha: .9) !important;
+    }
+    & .popup-more>.wrapper .section_right>a, .popup-more>.wrapper>.section_left>a{
+        color:#3369F4 !important;
+    }
+    & .service-popup>.wrapper{
+        background: #2B2B2B;
+    }
+    & .service-popup>.wrapper>.block>a{
+        color:#3369F4 !important;
+    }
+    main.case-page{
+        & >.section__ourWork
+        {
+            background: #252525 !important;
+        }
+        
+        & > .section__ourWork>.container>.header>h2 ,
+        & > .section__ourWork>.container>.header>P{
+            color:white !important;
+            &::after{
+                background: white;
+            }
+        }
+        & .section__ourWork>.container>a{
+            color:white !important;
+            & line{
+                stroke: white !important;
+            }
+        }
+        & .mobile_extra > .title{
+            color:white !important;
+        }
+    }
+}
+
+
+// 3 - добавить спонсоры на первом екране
+// 4 - поменять текста блок предпоследний 

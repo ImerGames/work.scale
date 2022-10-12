@@ -13,9 +13,39 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>  
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/success/style/style.min.css"/>
+    <script src="/success/script/component/lib/jquery.cookie.js"></script>
     <title>4Scale</title>
 </head>
 <body>
+    <div class="popup-more">
+        <div class="wrapper">   
+            <button class="close close-more">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L27 27" stroke="#3369F4" stroke-width="1.5"/>
+                    <path d="M27 1L0.999998 27" stroke="#3369F4" stroke-width="1.5"/>
+                    </svg>                    
+            </button>
+            <div class="section_left">
+                <h2>WE'RE SUPERVISING YOUR FULL FUNNEL CUSTOMER JOURNEY, FROM AWARENESS TO CONVERSION & RETENTION</h2>
+                <span class="pre-title">Multichannel growth brand</span>
+                <ol class="list">
+                    <li><span class="num">01</span> <p>You can understand the true levers that make your eCommerce business grow</p> </li>
+                    <li><span class="num">02</span> <p>We’ll help you execute a strategy that goes beyond “one marketing channel”, as well as effectively integrate all channels working together</p> </li>
+                    <li><span class="num">03</span> <p>We’ll help you unlock your unique growth loops and put them into action with frameworks and strategies that drive rapid growth and maximize revenue potential</p> </li>
+                </ol>
+                <a href="#">Let’s talk</a>
+            </div>
+            <div class="section_right">
+                <h2>REAL WIN-WIN PARTNERSHIP. Work with us to scale your brand wildly</h2>
+                <ol class="list">
+                    <li><span class="num">01</span> <p>Stop worrying about an agency overtaking. Our team will integrate as partners and cooperate with your existing team to become an extension of its capabilities and experience</p> </li>
+                    <li><span class="num">02</span> <p>You’ll receive detailed weekly/monthly strategic reports and actions based on data. You can be fully aware of the progress we make</p> </li>
+                    <li><span class="num">03</span> <p>We’ll always be in touch, give quick feedback</p> </li>
+                </ol>
+                <a href="#">Let’s talk</a>
+            </div>
+        </div>
+    </div>
     <div class="service-popup">
         <div class="wrapper">
             <div class="close" id="close-service-popup">
@@ -78,21 +108,55 @@
             </div>
             <div class="block">
                 <div class="burger">
-                    <svg width="32" height="17" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="open_burger"><svg width="32" height="17" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="-4.37114e-08" y1="0.5" x2="32" y2="0.499997" stroke="#252525"/>
                         <line x1="-4.37114e-08" y1="8.5" x2="32" y2="8.5" stroke="#252525"/>
                         <line x1="16" y1="16.5" x2="32" y2="16.5" stroke="#252525"/>
-                        </svg>
+                        </svg></button>
+
+                    <div class="burger_menu">
+                        <div class="header">
+                            <span class="title"><span>4</span>Scale</span>
+                            <button class="close_burger"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L27 27" stroke="white" stroke-width="1.5"/>
+                                <path d="M27 1L0.999998 27" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                                </button>                               
+                        </div>
+                        <ul class="list">
+                            <!-- todo -->
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Our work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                        <div class="bottom">
+                            <div class="thems">
+                                <button class="ui-thems-button" data-them="white">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.0004 11.7783C18.0004 13.3106 17.3917 14.7802 16.3081 15.8638C15.2246 16.9473 13.755 17.5561 12.2226 17.5561C10.6902 17.5561 9.22062 16.9473 8.13707 15.8638C7.05352 14.7802 6.44479 13.3106 6.44479 11.7783C6.44479 10.2459 7.05352 8.77628 8.13707 7.69274C9.22062 6.60919 10.6902 6.00046 12.2226 6.00046C13.755 6.00046 15.2246 6.60919 16.3081 7.69274C17.3917 8.77628 18.0004 10.2459 18.0004 11.7783ZM12.2226 0.222656C12.4141 0.222656 12.5978 0.298748 12.7333 0.434191C12.8687 0.569635 12.9448 0.753335 12.9448 0.944881V3.83378C12.9448 4.02533 12.8687 4.20903 12.7333 4.34447C12.5978 4.47992 12.4141 4.55601 12.2226 4.55601C12.031 4.55601 11.8473 4.47992 11.7119 4.34447C11.5765 4.20903 11.5004 4.02533 11.5004 3.83378V0.944881C11.5004 0.753335 11.5765 0.569635 11.7119 0.434191C11.8473 0.298748 12.031 0.222656 12.2226 0.222656V0.222656ZM12.2226 19.0005C12.4141 19.0005 12.5978 19.0766 12.7333 19.212C12.8687 19.3475 12.9448 19.5312 12.9448 19.7227V22.6116C12.9448 22.8032 12.8687 22.9869 12.7333 23.1223C12.5978 23.2578 12.4141 23.3339 12.2226 23.3339C12.031 23.3339 11.8473 23.2578 11.7119 23.1223C11.5765 22.9869 11.5004 22.8032 11.5004 22.6116V19.7227C11.5004 19.5312 11.5765 19.3475 11.7119 19.212C11.8473 19.0766 12.031 19.0005 12.2226 19.0005ZM23.7782 11.7783C23.7782 11.9698 23.7021 12.1535 23.5667 12.2889C23.4312 12.4244 23.2475 12.5005 23.056 12.5005H20.1671C19.9755 12.5005 19.7918 12.4244 19.6564 12.2889C19.5209 12.1535 19.4448 11.9698 19.4448 11.7783C19.4448 11.5867 19.5209 11.403 19.6564 11.2676C19.7918 11.1321 19.9755 11.056 20.1671 11.056H23.056C23.2475 11.056 23.4312 11.1321 23.5667 11.2676C23.7021 11.403 23.7782 11.5867 23.7782 11.7783ZM5.00034 11.7783C5.00034 11.9698 4.92425 12.1535 4.78881 12.2889C4.65336 12.4244 4.46966 12.5005 4.27812 12.5005H1.38922C1.19767 12.5005 1.01397 12.4244 0.878527 12.2889C0.743084 12.1535 0.666992 11.9698 0.666992 11.7783C0.666992 11.5867 0.743084 11.403 0.878527 11.2676C1.01397 11.1321 1.19767 11.056 1.38922 11.056H4.27812C4.46966 11.056 4.65336 11.1321 4.78881 11.2676C4.92425 11.403 5.00034 11.5867 5.00034 11.7783ZM20.3939 3.607C20.5292 3.74244 20.6053 3.92611 20.6053 4.11762C20.6053 4.30912 20.5292 4.49279 20.3939 4.62823L18.3514 6.67213C18.2842 6.73918 18.2045 6.79235 18.1168 6.82861C18.0292 6.86486 17.9352 6.88349 17.8403 6.88342C17.6486 6.88328 17.4649 6.80702 17.3294 6.6714C17.2624 6.60426 17.2092 6.52456 17.173 6.43686C17.1367 6.34916 17.1181 6.25518 17.1182 6.16028C17.1183 5.96863 17.1946 5.78488 17.3302 5.64946L19.3726 3.607C19.5081 3.47161 19.6917 3.39555 19.8832 3.39555C20.0747 3.39555 20.2584 3.47161 20.3939 3.607ZM7.11502 16.8858C7.25042 17.0213 7.32648 17.2049 7.32648 17.3964C7.32648 17.588 7.25042 17.7716 7.11502 17.9071L5.07257 19.9495C4.93635 20.0811 4.75392 20.1539 4.56455 20.1522C4.37519 20.1506 4.19404 20.0746 4.06014 19.9407C3.92623 19.8068 3.85028 19.6257 3.84863 19.4363C3.84698 19.2469 3.91978 19.0645 4.05134 18.9283L6.09379 16.8858C6.22923 16.7504 6.4129 16.6744 6.60441 16.6744C6.79591 16.6744 6.97958 16.7504 7.11502 16.8858ZM20.3939 19.9495C20.2584 20.0849 20.0747 20.161 19.8832 20.161C19.6917 20.161 19.5081 20.0849 19.3726 19.9495L17.3302 17.9071C17.1986 17.7708 17.1258 17.5884 17.1275 17.399C17.1291 17.2097 17.2051 17.0285 17.339 16.8946C17.4729 16.7607 17.654 16.6848 17.8434 16.6831C18.0327 16.6815 18.2152 16.7543 18.3514 16.8858L20.3939 18.9283C20.5292 19.0637 20.6053 19.2474 20.6053 19.4389C20.6053 19.6304 20.5292 19.8141 20.3939 19.9495ZM7.11502 6.67213C6.97958 6.80752 6.79591 6.88359 6.60441 6.88359C6.4129 6.88359 6.22923 6.80752 6.09379 6.67213L4.05134 4.62823C3.98236 4.56161 3.92734 4.48191 3.88949 4.3938C3.85164 4.30568 3.83171 4.21091 3.83088 4.11502C3.83005 4.01912 3.84832 3.92402 3.88463 3.83526C3.92095 3.7465 3.97458 3.66586 4.04239 3.59805C4.1102 3.53024 4.19084 3.47661 4.2796 3.4403C4.36835 3.40398 4.46346 3.38571 4.55935 3.38654C4.65525 3.38738 4.75002 3.4073 4.83813 3.44515C4.92625 3.483 5.00594 3.53802 5.07257 3.607L7.11502 5.64946C7.18228 5.71654 7.23564 5.79624 7.27205 5.88399C7.30846 5.97173 7.3272 6.06579 7.3272 6.16079C7.3272 6.25579 7.30846 6.34985 7.27205 6.4376C7.23564 6.52534 7.18228 6.60504 7.11502 6.67213Z" fill="white"/>
+                                        </svg>
+                                                                    
+                                </button>
+                                <button class="ui-thems-button" data-them="dark">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.00069 0.623234C9.14168 0.794564 9.22806 1.00424 9.24866 1.22517C9.26926 1.4461 9.22313 1.66813 9.11624 1.86257C8.28115 3.39582 7.84503 5.11446 7.84802 6.86037C7.84802 12.6685 12.5829 17.3716 18.4185 17.3716C19.1797 17.3716 19.9207 17.2922 20.6328 17.1405C20.8511 17.0933 21.0785 17.1113 21.2866 17.1925C21.4947 17.2737 21.6742 17.4144 21.8029 17.597C21.9386 17.7868 22.0078 18.0163 21.9997 18.2495C21.9916 18.4828 21.9067 18.7069 21.7581 18.8869C20.6252 20.2785 19.196 21.3998 17.5747 22.1689C15.9534 22.9381 14.1809 23.3357 12.3865 23.3329C5.72756 23.3329 0.333984 17.9682 0.333984 11.3584C0.333984 6.3837 3.38755 2.1168 7.73535 0.308344C7.95193 0.216812 8.19236 0.198025 8.42052 0.254806C8.64869 0.311587 8.85227 0.44087 9.00069 0.623234ZM7.35112 2.11535C5.67932 3.01211 4.28172 4.34507 3.30685 5.97256C2.33199 7.60005 1.81628 9.46126 1.81455 11.3584C1.81455 17.1651 6.5509 21.8682 12.3865 21.8682C13.7839 21.8706 15.1679 21.5959 16.4585 21.0598C17.749 20.5238 18.9204 19.7371 19.9048 18.7453C19.4181 18.806 18.9226 18.8363 18.4185 18.8363C11.7596 18.8363 6.36745 13.4716 6.36745 6.86182C6.36745 5.17614 6.71701 3.57136 7.35112 2.11535Z" fill="white"/>
+                                        </svg>                                                                                         
+                                </button>
+                            </div>
+                            <span class="phone">+38 099 637 57 45</span>
+                        </div>
+                    </div>
                         
                 </div>
                 <a class="tel_link" href="tel:+380996375745">+380 99 637 57 45</a>
                 <div class="thems">
-                    <button class="ui-thems-button active">
+                    <button class="ui-thems-button" data-them="white">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 8C12 9.06087 11.5786 10.0783 10.8284 10.8284C10.0783 11.5786 9.06087 12 8 12C6.93913 12 5.92172 11.5786 5.17157 10.8284C4.42143 10.0783 4 9.06087 4 8C4 6.93913 4.42143 5.92172 5.17157 5.17157C5.92172 4.42143 6.93913 4 8 4C9.06087 4 10.0783 4.42143 10.8284 5.17157C11.5786 5.92172 12 6.93913 12 8ZM8 0C8.13261 0 8.25979 0.0526784 8.35355 0.146447C8.44732 0.240215 8.5 0.367392 8.5 0.5V2.5C8.5 2.63261 8.44732 2.75979 8.35355 2.85355C8.25979 2.94732 8.13261 3 8 3C7.86739 3 7.74021 2.94732 7.64645 2.85355C7.55268 2.75979 7.5 2.63261 7.5 2.5V0.5C7.5 0.367392 7.55268 0.240215 7.64645 0.146447C7.74021 0.0526784 7.86739 0 8 0V0ZM8 13C8.13261 13 8.25979 13.0527 8.35355 13.1464C8.44732 13.2402 8.5 13.3674 8.5 13.5V15.5C8.5 15.6326 8.44732 15.7598 8.35355 15.8536C8.25979 15.9473 8.13261 16 8 16C7.86739 16 7.74021 15.9473 7.64645 15.8536C7.55268 15.7598 7.5 15.6326 7.5 15.5V13.5C7.5 13.3674 7.55268 13.2402 7.64645 13.1464C7.74021 13.0527 7.86739 13 8 13ZM16 8C16 8.13261 15.9473 8.25979 15.8536 8.35355C15.7598 8.44732 15.6326 8.5 15.5 8.5H13.5C13.3674 8.5 13.2402 8.44732 13.1464 8.35355C13.0527 8.25979 13 8.13261 13 8C13 7.86739 13.0527 7.74021 13.1464 7.64645C13.2402 7.55268 13.3674 7.5 13.5 7.5H15.5C15.6326 7.5 15.7598 7.55268 15.8536 7.64645C15.9473 7.74021 16 7.86739 16 8ZM3 8C3 8.13261 2.94732 8.25979 2.85355 8.35355C2.75979 8.44732 2.63261 8.5 2.5 8.5H0.5C0.367392 8.5 0.240215 8.44732 0.146447 8.35355C0.0526784 8.25979 0 8.13261 0 8C0 7.86739 0.0526784 7.74021 0.146447 7.64645C0.240215 7.55268 0.367392 7.5 0.5 7.5H2.5C2.63261 7.5 2.75979 7.55268 2.85355 7.64645C2.94732 7.74021 3 7.86739 3 8ZM13.657 2.343C13.7507 2.43676 13.8034 2.56392 13.8034 2.6965C13.8034 2.82908 13.7507 2.95624 13.657 3.05L12.243 4.465C12.1965 4.51142 12.1413 4.54823 12.0806 4.57333C12.0199 4.59843 11.9548 4.61132 11.8891 4.61128C11.7565 4.61118 11.6293 4.55839 11.5355 4.4645C11.4891 4.41801 11.4523 4.36284 11.4272 4.30212C11.4021 4.24141 11.3892 4.17634 11.3892 4.11065C11.3893 3.97796 11.4421 3.85075 11.536 3.757L12.95 2.343C13.0438 2.24926 13.1709 2.19661 13.3035 2.19661C13.4361 2.19661 13.5632 2.24926 13.657 2.343ZM4.464 11.536C4.55774 11.6298 4.61039 11.7569 4.61039 11.8895C4.61039 12.0221 4.55774 12.1492 4.464 12.243L3.05 13.657C2.9557 13.7481 2.8294 13.7985 2.6983 13.7973C2.5672 13.7962 2.44179 13.7436 2.34909 13.6509C2.25639 13.5582 2.2038 13.4328 2.20266 13.3017C2.20152 13.1706 2.25192 13.0443 2.343 12.95L3.757 11.536C3.85076 11.4423 3.97792 11.3896 4.1105 11.3896C4.24308 11.3896 4.37024 11.4423 4.464 11.536ZM13.657 13.657C13.5632 13.7507 13.4361 13.8034 13.3035 13.8034C13.1709 13.8034 13.0438 13.7507 12.95 13.657L11.536 12.243C11.4449 12.1487 11.3945 12.0224 11.3957 11.8913C11.3968 11.7602 11.4494 11.6348 11.5421 11.5421C11.6348 11.4494 11.7602 11.3968 11.8913 11.3957C12.0224 11.3945 12.1487 11.4449 12.243 11.536L13.657 12.95C13.7507 13.0438 13.8034 13.1709 13.8034 13.3035C13.8034 13.4361 13.7507 13.5632 13.657 13.657ZM4.464 4.465C4.37024 4.55874 4.24308 4.61139 4.1105 4.61139C3.97792 4.61139 3.85076 4.55874 3.757 4.465L2.343 3.05C2.29524 3.00388 2.25715 2.9487 2.23095 2.8877C2.20474 2.8267 2.19095 2.76109 2.19037 2.6947C2.1898 2.62831 2.20245 2.56247 2.22759 2.50102C2.25273 2.43957 2.28986 2.38375 2.3368 2.3368C2.38375 2.28986 2.43957 2.25273 2.50102 2.22759C2.56247 2.20245 2.62831 2.1898 2.6947 2.19037C2.76109 2.19095 2.8267 2.20474 2.8877 2.23095C2.9487 2.25715 3.00388 2.29524 3.05 2.343L4.464 3.757C4.51056 3.80345 4.54751 3.85862 4.57271 3.91937C4.59792 3.98011 4.61089 4.04523 4.61089 4.111C4.61089 4.17677 4.59792 4.24189 4.57271 4.30263C4.54751 4.36338 4.51056 4.41855 4.464 4.465Z" fill="black"/>
                             </svg>                            
                     </button>
-                    <button class="ui-thems-button">
+                    <button class="ui-thems-button" data-them="dark">
                         <svg width="16" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 0.277322C6.09761 0.395934 6.15741 0.541094 6.17168 0.694045C6.18594 0.846995 6.154 1.00071 6.08 1.13532C5.50186 2.1968 5.19993 3.38662 5.202 4.59532C5.202 8.61632 8.48 11.8723 12.52 11.8723C13.047 11.8723 13.56 11.8173 14.053 11.7123C14.2041 11.6796 14.3615 11.6921 14.5056 11.7483C14.6497 11.8045 14.774 11.9019 14.863 12.0283C14.957 12.1598 15.0049 12.3186 14.9993 12.4801C14.9937 12.6416 14.9349 12.7967 14.832 12.9213C14.0477 13.8848 13.0582 14.661 11.9358 15.1935C10.8134 15.726 9.58632 16.0013 8.344 15.9993C3.734 15.9993 0 12.2853 0 7.70932C0 4.26532 2.114 1.31132 5.124 0.0593219C5.27394 -0.00404621 5.44039 -0.0170522 5.59835 0.0222576C5.75631 0.0615674 5.89725 0.151071 6 0.277322ZM4.858 1.31032C3.7006 1.93115 2.73304 2.85396 2.05813 3.98068C1.38323 5.1074 1.0262 6.39593 1.025 7.70932C1.025 11.7293 4.304 14.9853 8.344 14.9853C9.31144 14.987 10.2696 14.7968 11.1631 14.4257C12.0565 14.0546 12.8675 13.5099 13.549 12.8233C13.212 12.8653 12.869 12.8863 12.52 12.8863C7.91 12.8863 4.177 9.17232 4.177 4.59632C4.177 3.42932 4.419 2.31832 4.858 1.31032Z" fill="black"/>
                             </svg>                                                    
@@ -124,7 +188,15 @@
                     <a href="#">Discover more <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.64645 10.3536C3.84171 10.5488 4.15829 10.5488 4.35355 10.3536L7.53553 7.17157C7.7308 6.97631 7.7308 6.65973 7.53553 6.46447C7.34027 6.2692 7.02369 6.2692 6.82843 6.46447L4 9.29289L1.17157 6.46447C0.976311 6.2692 0.659729 6.2692 0.464466 6.46447C0.269204 6.65973 0.269204 6.97631 0.464466 7.17157L3.64645 10.3536ZM3.5 2.18557e-08L3.5 10L4.5 10L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="black"/>
                         </svg>
-                        </a>
+                    </a>
+                    <div class="partners">
+                        <span class="title">PARTNERS</span>
+                        <div class="images">
+                            <img data-them-img="/success/resourse/resours/sponsors/1-dark.png" src="/success/resourse/resours/sponsors/1.png" alt="sponsors" />
+                            <img data-them-img="/success/resourse/resours/sponsors/2-dark.png" src="/success/resourse/resours/sponsors/2.png" alt="sponsors" />
+                            <img data-them-img="/success/resourse/resours/sponsors/3-dark.png" src="/success/resourse/resours/sponsors/3.png" alt="sponsors" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -133,11 +205,11 @@
                 <p>Scalable marketing for every <span>stage</span> of your funnel
                     and every milestone of your customer’s journey</p>
                 <ul class="products">
-                    <li> <img src="/success/resourse/resours/products/HP.png" alt="product"/> </li>
-                    <li> <img src="/success/resourse/resours/products/WP.png" alt="product"/> </li>
-                    <li> <img src="/success/resourse/resours/products/NU.png" alt="product"/> </li>
-                    <li> <img src="/success/resourse/resours/products/TH.png" alt="product"/> </li>
-                    <li> <img src="/success/resourse/resours/products/S7.png" alt="product"/> </li>
+                    <li> <img src="/success/resourse/resours/products/HP.png" data-them-img="/success/resourse/resours/products/white/1.png" alt="product"/> </li>
+                    <li> <img src="/success/resourse/resours/products/WP.png" data-them-img="/success/resourse/resours/products/white/2.png" alt="product" alt="product"/> </li>
+                    <li> <img src="/success/resourse/resours/products/NU.png" data-them-img="/success/resourse/resours/products/white/3.png" alt="product"alt="product"/> </li>
+                    <li> <img src="/success/resourse/resours/products/TH.png" data-them-img="/success/resourse/resours/products/white/4.png" alt="product"alt="product"/> </li>
+                    <li> <img src="/success/resourse/resours/products/S7.png" data-them-img="/success/resourse/resours/products/white/5.png" alt="product"alt="product"/> </li>
                     <li> <img src="/success/resourse/resours/products/CT.png" alt="product"/> </li>
                 </ul>
             </div>
@@ -148,24 +220,30 @@
                     <div class="block">
                         <span class="num">00-1</span>
                         <p>We're supervising your full funnel customer journey, from awareness to conversion & retention</p>
-                        <button class="ui-btn-2">
-                            <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="0.962891" y1="9.52249" x2="25.9629" y2="9.52248" stroke="white" stroke-width="0.97651"/>
-                                <line x1="25.6313" y1="9.14505" x2="16.8427" y2="0.356462" stroke="white" stroke-width="0.97651"/>
-                                <line y1="-0.488255" x2="12.4289" y2="-0.488255" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.9766 9.77539)" stroke="white" stroke-width="0.97651"/>
-                                </svg>                                
-                        </button>
+                        <div class="wrapper">
+                            <button class="ui-btn-2" data-popup-section="left">
+                                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0.962891" y1="9.52249" x2="25.9629" y2="9.52248" stroke="white" stroke-width="0.97651"/>
+                                    <line x1="25.6313" y1="9.14505" x2="16.8427" y2="0.356462" stroke="white" stroke-width="0.97651"/>
+                                    <line y1="-0.488255" x2="12.4289" y2="-0.488255" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.9766 9.77539)" stroke="white" stroke-width="0.97651"/>
+                                    </svg>                                
+                            </button>
+                            <span class="title">Learn more</span>
+                        </div>
                     </div>
                     <div class="block">
                         <span class="num">00-2</span>
                         <p>Real win-win partnership. Work with us to scale your brand wildly</p>
-                        <button class="ui-btn-2">
-                            <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="0.962891" y1="9.52249" x2="25.9629" y2="9.52248" stroke="white" stroke-width="0.97651"/>
-                                <line x1="25.6313" y1="9.14505" x2="16.8427" y2="0.356462" stroke="white" stroke-width="0.97651"/>
-                                <line y1="-0.488255" x2="12.4289" y2="-0.488255" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.9766 9.77539)" stroke="white" stroke-width="0.97651"/>
-                                </svg>                                
-                        </button>
+                        <div class="wrapper">
+                            <button class="ui-btn-2" data-popup-section="right">
+                                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0.962891" y1="9.52249" x2="25.9629" y2="9.52248" stroke="white" stroke-width="0.97651"/>
+                                    <line x1="25.6313" y1="9.14505" x2="16.8427" y2="0.356462" stroke="white" stroke-width="0.97651"/>
+                                    <line y1="-0.488255" x2="12.4289" y2="-0.488255" transform="matrix(-0.707107 0.707107 0.707107 0.707107 25.9766 9.77539)" stroke="white" stroke-width="0.97651"/>
+                                    </svg>                                
+                            </button>
+                            <span class="title">Learn more</span>
+                        </div>
                     </div>
                 </div>
                 
@@ -266,7 +344,7 @@
                     
                 </div>
                 <!-- todo -->
-                <a href="#">More cases <svg width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="case.html">More cases <svg width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="-4.20356e-08" y1="11.5192" x2="37" y2="11.5192" stroke="white" stroke-width="0.961662"/>
                     <line x1="37.6677" y1="11.3476" x2="26.1614" y2="0.348045" stroke="white" stroke-width="0.961662"/>
                     <line x1="37.8732" y1="11.3742" x2="26.8326" y2="22.4148" stroke="white" stroke-width="0.961662"/>
@@ -282,11 +360,11 @@
                         <span><b class="active">04</b>  <b>/</b>  <b class="all">06</b></span>
                         
                         <div class="buttons">
-                            <button class="swiper-service-button-left ui-button-slide"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button class="swiper-service-button-left ui-button-slide left"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.706889 7.57118L7.3928 0.367719C7.61414 0.137405 7.96684 0.144018 8.18061 0.382492C8.38915 0.615127 8.38915 0.983918 8.18061 1.21652L1.88861 7.99558L8.18061 14.7746C8.39813 15.009 8.39813 15.3891 8.18061 15.6234C7.96302 15.8578 7.61035 15.8578 7.39279 15.6234L0.706889 8.41998C0.489369 8.18555 0.489369 7.80558 0.706889 7.57118Z" fill="#969696"/>
                                 </svg>
                             </button>
-                            <button class="swiper-service-button-right ui-button-slide"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button class="swiper-service-button-right ui-button-slide right"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.29311 8.42882L1.6072 15.6323C1.38586 15.8626 1.03316 15.856 0.81939 15.6175C0.610848 15.3849 0.610848 15.0161 0.81939 14.7835L7.11139 8.00442L0.81939 1.22535C0.60187 0.990956 0.60187 0.610945 0.81939 0.376551C1.03698 0.142192 1.38965 0.142192 1.6072 0.376551L8.29311 7.58002C8.51063 7.81445 8.51063 8.19442 8.29311 8.42882Z" fill="#969696"/>
                                 </svg>
                             </button>
@@ -360,11 +438,11 @@
                     <span><b class="active">04</b>  <b>/</b>  <b class="all">06</b></span>
                     
                     <div class="buttons">
-                        <button class="swiper-service-button-left ui-button-slide"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="swiper-service-button-left ui-button-slide left"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.706889 7.57118L7.3928 0.367719C7.61414 0.137405 7.96684 0.144018 8.18061 0.382492C8.38915 0.615127 8.38915 0.983918 8.18061 1.21652L1.88861 7.99558L8.18061 14.7746C8.39813 15.009 8.39813 15.3891 8.18061 15.6234C7.96302 15.8578 7.61035 15.8578 7.39279 15.6234L0.706889 8.41998C0.489369 8.18555 0.489369 7.80558 0.706889 7.57118Z" fill="#969696"/>
                             </svg>
                         </button>
-                        <button class="swiper-service-button-right ui-button-slide"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="swiper-service-button-right ui-button-slide right"><svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.29311 8.42882L1.6072 15.6323C1.38586 15.8626 1.03316 15.856 0.81939 15.6175C0.610848 15.3849 0.610848 15.0161 0.81939 14.7835L7.11139 8.00442L0.81939 1.22535C0.60187 0.990956 0.60187 0.610945 0.81939 0.376551C1.03698 0.142192 1.38965 0.142192 1.6072 0.376551L8.29311 7.58002C8.51063 7.81445 8.51063 8.19442 8.29311 8.42882Z" fill="#969696"/>
                             </svg>
                         </button>
@@ -455,6 +533,7 @@
             <div class="container_fluid">
                 <div class="background_images">
                     <img class="bg_2" src="/success/resourse/service/background/background.6.1.png" alt="bg"/>
+                    <img class="bg_2_mob" data-dark-img="/success/resourse/service/background/background.6.1-450-dark.png" src="/success/resourse/service/background/background.6.1-450-white.png" style="display: none;" alt="bg"/>
                 </div>
                 <div class="header container">
                     <div class="block">
@@ -478,65 +557,56 @@
                 <div class="main">
                     <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.60T</div>
                             <div class="top"></div>
-                            <div class="info">12.64T</div>
+                            <div class="info">$5.4K</div>
                         </div>
                      </div>
                      <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.62T</div>
                             <div class="top"></div>
-                            <div class="info">12.59T</div>
+                            <div class="info">$4.0K</div>
                         </div>
                      </div>
                      <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.62T</div>
                             <div class="top"></div>
-                            <div class="info">12.71T</div>
+                            <div class="info">$8.0K</div>
                         </div>
                      </div>
                      <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.63T</div>
                             <div class="top"></div>
-                            <div class="info">12.78T</div>
+                            <div class="info">$5.4K</div>
                         </div>
                      </div>
                      <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.62T</div>
                             <div class="top"></div>
-                            <div class="info">12.74T</div>
+                            <div class="info">$6.8K</div>
                         </div>
                      </div>
                      <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.63T</div>
                             <div class="top"></div>
-                            <div class="info">12.61T</div>
+                            <div class="info">$8.0K</div>
                         </div>
                      </div>
                      <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.63T</div>
                             <div class="top"></div>
-                            <div class="info">12.75T</div>
+                            <div class="info">$5.4K</div>
                         </div>
                      </div>
                      <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.65T</div>
                             <div class="top"></div>
-                            <div class="info">12.83T</div>
+                            <div class="info">$7.4K</div>
                         </div>
                      </div>
                      <div class="column"> 
                         <div class="wrapper">
-                            <div class="val">VOL: 1.66T</div>
                             <div class="top"></div>
-                            <div class="info">12.87T</div>
+                            <div class="info">$10.3K</div>
                         </div>
                      </div>
                 </div>
@@ -576,8 +646,8 @@
             <div class="container">
                 <h2>Enjoy the best newsletter, about scaling your <span>brand</span> — right in your inbox.</h2>
                 <div class="email_wrapper">
-                    <input type="email" placeholder="E-mail" />
-                    <button class="ui-button-3">Sign up</button>
+                    <input type="email" class="mail_regx_52" placeholder="E-mail" />
+                    <button class="ui-button-3 send_mail">Sign up</button>
                 </div>
             </div>
         </section>
@@ -591,8 +661,8 @@
                             <svg width="56" height="50" viewBox="0 0 56 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="55.3262" y="10.5923" width="60.4013" height="13.7341" transform="rotate(140.465 55.3262 10.5923)" fill="#3369F4" fill-opacity="0.9"/>
                                 </svg>      
-                            <h3>4Scale is a Ukrainian team of skilled experts</h3>                              
-                            <p>in online marketing based in Warsaw, Poland. We work with digital marketing since 2019</p>
+                            <h3>Who we are</h3>                              
+                            <p>The Ukrainian agency with 3 years of digital experience in scaling e-commerce brands. Now we're based in Warsaw, Poland. We have implemented more than 50+ projects in e-commerce field including small, medium and sociocultural projects.</p>
                         </div>
                     </div>
                                         
@@ -603,8 +673,8 @@
                                 <rect width="60.4013" height="13.7341" transform="matrix(0.771232 0.636553 0.636553 -0.771232 0 10.5923)" fill="#3369F4" fill-opacity="0.9"/>
                                 </svg>
                                  
-                            <h3>We help growing Ecommerce brands to jumpstart</h3>                              
-                            <p>their growth by driving awareness and traffic to their site, increasing sales and leads, and building lasting relationships between them and their customers</p>
+                            <h3>Our philosophy</h3>                              
+                            <p>Together with a client, 4Scale builds warm, humane connections in the turbulent marketing world. Fighting for the result, we also enjoy the process. Our superpower — consideration, a unique form of consideration for clients that only 4Scale can show.</p>
                         </div>
                     </div>
                                         
@@ -616,8 +686,8 @@
                                 <rect width="60.4013" height="13.7341" transform="matrix(-4.37114e-08 1 1 4.37114e-08 20.7969 0)" fill="#3369F4" fill-opacity="0.9"/>
                                 </svg>
                                  
-                            <h3>Want To Partner Up With Us</h3>                              
-                            <p>To Grow Your eCommerce Business To The Next Level? <a href="#">contact us</a></p>
+                            <h3>4Scale in action</h3>                              
+                            <p>We help growing e-commerce brands to jumpstart their growth by driving awareness and traffic to their site, increasing sales and leads, and building lasting relationships between them and their customers. We're transparent from the first commercial offer to the last figure in Excel. Humane, from communication to realization.</p>
                         </div>
                     </div>
 
