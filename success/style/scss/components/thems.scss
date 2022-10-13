@@ -165,6 +165,12 @@ body.dark{
     & .service-popup>.wrapper{
         background: #2B2B2B;
     }
+    & .section__service>.container>.swiper .wrapper-slide>.name>svg path{
+        fill:white;
+    }
+    & .section__service>.container>.swiper .wrapper-slide>.name>svg g rect{
+        fill:white;
+    }
     & .service-popup>.wrapper>.block>a{
         color:#3369F4 !important;
     }
@@ -192,7 +198,3 @@ body.dark{
         }
     }
 }
-
-
-// 3 - добавить спонсоры на первом екране
-// 4 - поменять текста блок предпоследний 
